@@ -55,7 +55,9 @@ export default class App extends Component {
             }}
           />
           </View>
+          
         <View>
+          {/* On press handler need to be modified by directing it to the next page */}
           <Button style={styles.btn} title="Verify" onPress ={()=>{
            alert('verified')
     }}/>
@@ -67,7 +69,6 @@ export default class App extends Component {
 
 let styles = StyleSheet.create({
   Text: {
-    // position: "absolute",
     fontWeight: "600",
     fontSize: 50,
     marginTop: 150,
@@ -95,20 +96,6 @@ let styles = StyleSheet.create({
     fontSize: 20,
     height: 55,
     width: "10%",
-    borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: "grey",
-  },
-  submit: {
-    position:"relative",
-    backgroundColor: "#f5f4f2",
-    textAlign: "center",
-    fontWeight: "600",
-    alignSelf: "center",
-    padding: 10,
-    fontSize: 20,
-    height: 55,
-    width: "30%",
     borderRadius: 10,
     borderWidth: 0.5,
     borderColor: "grey",
