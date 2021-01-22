@@ -56,10 +56,7 @@ export default class App extends Component {
           />
           </View>
         <View>
-        <TextInput  style={styles.submit}
-          value="Verify"
-          />
-          <Button style={styles.submit} title="Verify" onPress ={()=>{
+          <Button style={styles.btn} title="Verify" onPress ={()=>{
            alert('verified')
     }}/>
         </View>
@@ -84,6 +81,9 @@ let styles = StyleSheet.create({
     flex: 0.3,
     justifyContent: "space-evenly",
     flexDirection: "row",
+  },
+  btn:{
+    width:10
   },
   input: {
     // position:"relative",
